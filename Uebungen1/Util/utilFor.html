@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>For Uebung</title>
+  </head>
+  <body>
+<script>
+
+Array.prototype.getLength = function() { return this.length;}
+
+var rectangle = { 
+	height : 150,
+	width : 250,
+	calculate : function() { return /* calc here */ 0; },
+	position : [ 0, 10, 10, 20 ]
+};
+
+for (var property in rectangle) {
+	console.log(property + ": " + rectangle[property]);
+}
+for (var property in rectangle.position) {
+	console.log(property + ": " + rectangle.position[property]);
+}
+
+</script>
+<noscript>
+</noscript>
+  </body>
+</html>
